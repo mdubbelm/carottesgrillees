@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Naar inhoud</a>
+
+    <div class="site-wrapper">
+        <header class="site-header">
+            <a href="/" class="logo">
+                <img src="/images/logocg.jpg" alt="" class="logo-image">
+                <span class="site-title">carottes grillées</span>
+            </a>
+        </header>
+
+        <!-- Mobile menu toggle - outside grid -->
+        <button class="menu-toggle" aria-expanded="false" aria-controls="sidebar-nav">
+            Menu
+        </button>
+
+        <div class="site-layout">
+            <nav class="sidebar-nav" id="sidebar-nav" aria-label="Hoofdnavigatie">
+                <ul class="nav-list">
+                    {{ partial "menu-recursive.html" (dict "menuItems" .Site.Menus.main "currentPage" .) }}
+                </ul>
+            </nav>
+
+            <main id="main-content" class="main-content">
+                <!-- Breadcrumbs -->
+                {{ if not .IsHome }}
+                <nav class="breadcrumbs" aria-label="Breadcrumb">
+                    <a href="/">Home</a>
+                    <span aria-hidden="true">›</span>
+                    <span aria-current="page">{{ .Title }}</span>
+                </nav>
+                {{ end }}
+
+                {{ block "main" . }}{{ end }}
+            </main>
+        </div>
+
+        <footer class="site-footer">
+            <p>meer dan een kameel heb je niet nodig...</p>
+        </footer>
+    </div>
+
+    <script>
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const sidebarNav = document.querySelector('.sidebar-nav');
+
+    if (menuToggle && sidebarNav) {
+        menuToggle.addEventListener('click', () => {
+            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', !isExpanded);
+            sidebarNav.classList.toggle('is-open');
+        });
+    }
+    </script>
+</body>
+</html>

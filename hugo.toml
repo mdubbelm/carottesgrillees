@@ -1,0 +1,622 @@
+baseURL = 'https://carottesgrillees.nl/'
+languageCode = 'nl'
+title = 'Carottes grillées'
+theme = 'carottes'
+
+# Clean URLs
+[permalinks]
+  page = '/:slug/'
+
+# Menu structuur (gebaseerd op originele site screenshots)
+
+# Begin
+[[menus.main]]
+  name = 'begin'
+  url = '/begin/'
+  weight = 1
+  identifier = 'begin'
+
+[[menus.main]]
+  name = 'root for thought'
+  url = '/leeuc/'
+  weight = 1
+  parent = 'begin'
+  identifier = 'leeuc'
+
+# Palomino
+[[menus.main]]
+  name = 'palomino'
+  url = '/palomino/'
+  weight = 2
+  identifier = 'palomino'
+
+[[menus.main]]
+  name = 'ay'
+  url = '/een-uitroep/'
+  weight = 1
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'lente'
+  url = '/festina-lente/'
+  weight = 2
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'lust'
+  url = '/lust-for-life/'
+  weight = 3
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'ruim op tijd'
+  url = '/ruim-op-tijd/'
+  weight = 4
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'vier uur'
+  url = '/vier-uur/'
+  weight = 5
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'een dag aan zee'
+  url = '/een-dag-aan-zee/'
+  weight = 6
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'klein'
+  url = '/klein/'
+  weight = 7
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'schaduw'
+  url = '/kleine-schaduw/'
+  weight = 8
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'zekerheid'
+  url = '/voor-de-zekerheid/'
+  weight = 9
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'geen gevaar'
+  url = '/geen-gevaar/'
+  weight = 10
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'honger'
+  url = '/stil-je-honger-naar-land/'
+  weight = 11
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'porselein'
+  url = '/van-porselein-van-leem/'
+  weight = 12
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'babel'
+  url = '/babel/'
+  weight = 13
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'behandel'
+  url = '/behandel-de-paarden-met-zachtheid-3-of-4/'
+  weight = 14
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'unas cosas'
+  url = '/explico-unas-cosas/'
+  weight = 15
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'zeepaardje'
+  url = '/de-anatomie-van-een-zeepaardje-2/'
+  weight = 16
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'zomer'
+  url = '/lente/'
+  weight = 17
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'droom'
+  url = '/droom/'
+  weight = 18
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'winter'
+  url = '/winter/'
+  weight = 19
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'tiktak'
+  url = '/nog-meert-zonder-titel/'
+  weight = 20
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'sprong'
+  url = '/sprong/'
+  weight = 21
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'onweer'
+  url = '/zonder-titel4/'
+  weight = 22
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'korreltje'
+  url = '/korreltje/'
+  weight = 23
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'vijf uur'
+  url = '/vijf-uur/'
+  weight = 24
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'uiltje'
+  url = '/uiltje/'
+  weight = 25
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'bejaarden'
+  url = '/bejaarden/'
+  weight = 26
+  parent = 'palomino'
+
+[[menus.main]]
+  name = 'palomino?'
+  url = '/palomino6/'
+  weight = 27
+  parent = 'palomino'
+
+# Objets trouvés
+[[menus.main]]
+  name = 'objets trouvés'
+  url = '/gevonden-voorwerpen/'
+  weight = 3
+  identifier = 'objets'
+
+[[menus.main]]
+  name = 'tegen de tijd'
+  url = '/verloren-tijd/'
+  weight = 1
+  parent = 'objets'
+
+[[menus.main]]
+  name = 'twee'
+  url = '/gevonden-voorwerpen-twee/'
+  weight = 2
+  parent = 'objets'
+
+[[menus.main]]
+  name = 'compositie #1'
+  url = '/mondriaan-early-bird-song/'
+  weight = 3
+  parent = 'objets'
+
+[[menus.main]]
+  name = 'compositie #2'
+  url = '/la-biche-morte/'
+  weight = 4
+  parent = 'objets'
+
+[[menus.main]]
+  name = 'compositie #3'
+  url = '/zingend-jij-bent-mijn-vijand/'
+  weight = 5
+  parent = 'objets'
+
+[[menus.main]]
+  name = 'agnus'
+  url = '/outro/'
+  weight = 6
+  parent = 'objets'
+  identifier = 'agnus'
+
+[[menus.main]]
+  name = 'lam'
+  url = '/schaapje-1635-1640/'
+  weight = 1
+  parent = 'agnus'
+
+[[menus.main]]
+  name = 'vindplaatsen'
+  url = '/vindplaatsen/'
+  weight = 7
+  parent = 'objets'
+
+# Marina
+[[menus.main]]
+  name = 'marina'
+  url = '/marina/'
+  weight = 4
+  identifier = 'marina'
+
+[[menus.main]]
+  name = 'vlinders'
+  url = '/marina-en-de-vlinders/'
+  weight = 1
+  parent = 'marina'
+
+[[menus.main]]
+  name = 'engeltje'
+  url = '/engeltje/'
+  weight = 2
+  parent = 'marina'
+
+[[menus.main]]
+  name = 'ik houd van'
+  url = '/ik-houd-van/'
+  weight = 2
+  parent = 'marina'
+
+[[menus.main]]
+  name = 'juichend'
+  url = '/marina-juichend/'
+  weight = 3
+  parent = 'marina'
+
+[[menus.main]]
+  name = 'nogmaals'
+  url = '/marina-nogmaals/'
+  weight = 4
+  parent = 'marina'
+
+[[menus.main]]
+  name = 'dwaze maagden'
+  url = '/lied-van-de-dwaze-maagden/'
+  weight = 5
+  parent = 'marina'
+
+[[menus.main]]
+  name = 'wie telt'
+  url = '/wie-telt-er-nog/'
+  weight = 6
+  parent = 'marina'
+
+[[menus.main]]
+  name = 'eer'
+  url = '/eer-dat-ik/'
+  weight = 7
+  parent = 'marina'
+
+[[menus.main]]
+  name = 'voor jou'
+  url = '/voor-jou-tellen/'
+  weight = 8
+  parent = 'marina'
+
+[[menus.main]]
+  name = 'vogeltje'
+  url = '/vogeltje/'
+  weight = 9
+  parent = 'marina'
+
+[[menus.main]]
+  name = 'sokken'
+  url = '/oke/'
+  weight = 10
+  parent = 'marina'
+
+# Max
+[[menus.main]]
+  name = 'max'
+  url = '/max-houdt-van-hoofddeksels/'
+  weight = 5
+  identifier = 'max'
+
+[[menus.main]]
+  name = 'ontmoet max'
+  url = '/ontmoet-max/'
+  weight = 1
+  parent = 'max'
+
+[[menus.main]]
+  name = 'gekke max'
+  url = '/gekke-max/'
+  weight = 2
+  parent = 'max'
+
+[[menus.main]]
+  name = 'het hoedje'
+  url = '/het-hoedje-van-max/'
+  weight = 2
+  parent = 'max'
+
+[[menus.main]]
+  name = 'zonder titel'
+  url = '/zonder-titel/'
+  weight = 3
+  parent = 'max'
+
+[[menus.main]]
+  name = 'hombre'
+  url = '/cest-le-chapeau-qui-fait-lhomme/'
+  weight = 4
+  parent = 'max'
+
+[[menus.main]]
+  name = 'guppy'
+  url = '/vissen-weten-beter/'
+  weight = 5
+  parent = 'max'
+
+[[menus.main]]
+  name = 'kano'
+  url = '/copla-van-de-oude-en-de-nieuwe-wereld/'
+  weight = 6
+  parent = 'max'
+
+[[menus.main]]
+  name = 'waar'
+  url = '/waar-is-max/'
+  weight = 7
+  parent = 'max'
+
+[[menus.main]]
+  name = 'hop allen'
+  url = '/hop-allen/'
+  weight = 8
+  parent = 'max'
+
+[[menus.main]]
+  name = 'wie telt?'
+  url = '/max-telt-mee/'
+  weight = 9
+  parent = 'max'
+
+[[menus.main]]
+  name = 'over luisteren'
+  url = '/ontbijt/'
+  weight = 10
+  parent = 'max'
+
+[[menus.main]]
+  name = 'slaapliedje'
+  url = '/naar-bed/'
+  weight = 11
+  parent = 'max'
+
+# Short cuts
+[[menus.main]]
+  name = 'short cuts'
+  url = '/whos-afraid-of-red-yellow-and-blue-iii/'
+  weight = 6
+  identifier = 'shortcuts'
+
+[[menus.main]]
+  name = 'nengels'
+  url = '/whos-afraid-of-red-yellow-and-blue-iii9/'
+  weight = 1
+  parent = 'shortcuts'
+
+# Stoelgang
+[[menus.main]]
+  name = 'stoelgang'
+  url = '/stoelgang/'
+  weight = 7
+
+# Vallende mannen - met 3 niveaus
+[[menus.main]]
+  name = 'vallende mannen'
+  url = '/vallende-mannen/'
+  weight = 8
+  identifier = 'vallende'
+
+[[menus.main]]
+  name = 'van a tot en met m'
+  url = '/van-a-tot-en-met-m/'
+  weight = 1
+  parent = 'vallende'
+  identifier = 'van-a-m'
+
+# Auteurs A-M
+[[menus.main]]
+  name = 'babel'
+  url = '/isaak-babel/'
+  weight = 1
+  parent = 'van-a-m'
+
+[[menus.main]]
+  name = 'carrington'
+  url = '/leonora-carrington/'
+  weight = 2
+  parent = 'van-a-m'
+
+[[menus.main]]
+  name = 'charms'
+  url = '/daniil-charms/'
+  weight = 3
+  parent = 'van-a-m'
+
+[[menus.main]]
+  name = 'chlebnikov'
+  url = '/velimir-chlebnikov/'
+  weight = 4
+  parent = 'van-a-m'
+
+[[menus.main]]
+  name = 'cummings'
+  url = '/ee-cummings3/'
+  weight = 5
+  parent = 'van-a-m'
+
+[[menus.main]]
+  name = 'duchamp'
+  url = '/marcel-duchamp/'
+  weight = 6
+  parent = 'van-a-m'
+
+[[menus.main]]
+  name = 'ehrenstein'
+  url = '/albert-ehrenstein/'
+  weight = 7
+  parent = 'van-a-m'
+
+[[menus.main]]
+  name = 'garcia lorca'
+  url = '/federico-garcia-lorca/'
+  weight = 8
+  parent = 'van-a-m'
+
+[[menus.main]]
+  name = 'van geel'
+  url = '/chris-van-geel/'
+  weight = 9
+  parent = 'van-a-m'
+
+[[menus.main]]
+  name = 'hillenius'
+  url = '/dick-hillenius/'
+  weight = 10
+  parent = 'van-a-m'
+
+[[menus.main]]
+  name = 'van hoddis'
+  url = '/jakob-van-hoddis/'
+  weight = 11
+  parent = 'van-a-m'
+
+[[menus.main]]
+  name = 'hrabal'
+  url = '/bohumil-hrabal/'
+  weight = 12
+  parent = 'van-a-m'
+
+[[menus.main]]
+  name = 'kracht'
+  url = '/christian-kracht/'
+  weight = 13
+  parent = 'van-a-m'
+
+[[menus.main]]
+  name = 'machado'
+  url = '/joaquim-maria-machado-de-assis/'
+  weight = 14
+  parent = 'van-a-m'
+
+[[menus.main]]
+  name = 'majakovski'
+  url = '/vladimir-majakovski/'
+  weight = 15
+  parent = 'van-a-m'
+
+[[menus.main]]
+  name = 'marinetti'
+  url = '/marinetti/'
+  weight = 16
+  parent = 'van-a-m'
+
+[[menus.main]]
+  name = 'marugg'
+  url = '/tip-marugg/'
+  weight = 17
+  parent = 'van-a-m'
+
+[[menus.main]]
+  name = 'van n tot en met z'
+  url = '/van-n-tot-en-met-z/'
+  weight = 2
+  parent = 'vallende'
+  identifier = 'van-n-z'
+
+# Auteurs N-Z
+[[menus.main]]
+  name = 'platonov'
+  url = '/andrej-platonov/'
+  weight = 1
+  parent = 'van-n-z'
+
+[[menus.main]]
+  name = 'queneau'
+  url = '/raymond-queneau/'
+  weight = 2
+  parent = 'van-n-z'
+
+[[menus.main]]
+  name = 'rigaut'
+  url = '/jacques-rigaut/'
+  weight = 3
+  parent = 'van-n-z'
+
+[[menus.main]]
+  name = 'schwitters'
+  url = '/kurt-schwitters/'
+  weight = 4
+  parent = 'van-n-z'
+
+[[menus.main]]
+  name = 'tsvetajeva'
+  url = '/marina-tsvetajeva/'
+  weight = 5
+  parent = 'van-n-z'
+
+[[menus.main]]
+  name = 'vaché'
+  url = '/jacques-vache/'
+  weight = 6
+  parent = 'van-n-z'
+
+[[menus.main]]
+  name = 'walser'
+  url = '/robert-walser/'
+  weight = 7
+  parent = 'van-n-z'
+
+[[menus.main]]
+  name = 'williams'
+  url = '/william-carlos-williams/'
+  weight = 8
+  parent = 'van-n-z'
+
+[[menus.main]]
+  name = 'zosjtsjenko'
+  url = '/michail-michailovitsj-zosjtsjenko/'
+  weight = 9
+  parent = 'van-n-z'
+
+# Boekies
+[[menus.main]]
+  name = 'boekies'
+  url = '/boekjes/'
+  weight = 9
+
+# Drukt zich uit
+[[menus.main]]
+  name = 'drukt zich uit'
+  url = '/in-druk/'
+  weight = 10
+
+# Help
+[[menus.main]]
+  name = 'help'
+  url = '/help/'
+  weight = 11
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

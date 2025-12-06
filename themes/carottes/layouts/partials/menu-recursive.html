@@ -1,0 +1,42 @@
+{{/* Recursive menu partial - shows nested menu items only when in that section */}}
+{{ $currentPage := .currentPage }}
+{{ $menuItems := .menuItems }}
+{{ $currentURL := $currentPage.RelPermalink }}
+
+{{ range $menuItems }}
+  {{ $menuURL := .URL }}
+  {{ $isActive := or (eq $currentURL $menuURL) (hasPrefix $currentURL $menuURL) }}
+  {{ $hasChildren := .HasChildren }}
+
+  {{/* Also check if any child is active */}}
+  {{ $childActive := false }}
+  {{ if $hasChildren }}
+    {{ range .Children }}
+      {{ $childURL := .URL }}
+      {{ if or (eq $currentURL $childURL) (hasPrefix $currentURL $childURL) }}
+        {{ $childActive = true }}
+      {{ end }}
+      {{/* Check grandchildren too */}}
+      {{ if .HasChildren }}
+        {{ range .Children }}
+          {{ if or (eq $currentURL .URL) (hasPrefix $currentURL .URL) }}
+            {{ $childActive = true }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ $showSubmenu := or $isActive $childActive }}
+
+  <li class="nav-item {{ if or $isActive $childActive }}active{{ end }}">
+    <a href="{{ .URL }}">{{ .Name }}</a>
+
+    {{/* Only show submenu if this item or a child is active */}}
+    {{ if and $hasChildren $showSubmenu }}
+    <ul class="nav-submenu">
+      {{ partial "menu-recursive.html" (dict "menuItems" .Children "currentPage" $currentPage) }}
+    </ul>
+    {{ end }}
+  </li>
+{{ end }}

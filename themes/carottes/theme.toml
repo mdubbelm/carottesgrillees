@@ -1,0 +1,11 @@
+name = "Carottes"
+license = "MIT"
+licenselink = ""
+description = "Minimalistisch theme voor literaire blog Carottes Grillées"
+homepage = "https://carottesgrillees.nl"
+tags = ["blog", "poetry", "minimal", "literary"]
+features = ["poetry", "prose"]
+min_version = "0.112.0"
+
+[author]
+  name = "Monique Dubbelman"
