@@ -19,7 +19,7 @@
 <article class="content-with-sidebar {{ if eq .Params.type "poem" }}poem{{ else }}prose{{ end }}">
     {{ if $sectionImage }}
     <aside class="section-image">
-        <img src="{{ $sectionImage }}" alt="">
+        <img src="{{ $sectionImage | relURL }}" alt="">
     </aside>
     {{ end }}
 

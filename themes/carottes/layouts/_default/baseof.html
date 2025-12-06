@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,8 +14,8 @@
 
     <div class="site-wrapper">
         <header class="site-header">
-            <a href="/" class="logo">
-                <img src="/images/logocg.jpg" alt="" class="logo-image">
+            <a href="{{ "/" | relURL }}" class="logo">
+                <img src="{{ "images/logocg.jpg" | relURL }}" alt="" class="logo-image">
                 <span class="site-title">carottes grillées</span>
             </a>
         </header>
@@ -36,7 +36,7 @@
                 <!-- Breadcrumbs -->
                 {{ if not .IsHome }}
                 <nav class="breadcrumbs" aria-label="Breadcrumb">
-                    <a href="/">Home</a>
+                    <a href="{{ "/" | relURL }}">Home</a>
                     <span aria-hidden="true">›</span>
                     <span aria-current="page">{{ .Title }}</span>
                 </nav>
