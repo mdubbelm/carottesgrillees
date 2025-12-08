@@ -1,18 +1,23 @@
 {{ define "main" }}
 {{/* Determine section image and alt text based on URL */}}
-{{ $sectionImage := "" }}
-{{ $sectionAlt := "" }}
 {{ $url := .RelPermalink }}
+
+{{/* Use scratch to store values from within range loops */}}
+{{ $.Scratch.Set "sectionImage" "" }}
+{{ $.Scratch.Set "sectionAlt" "" }}
 
 {{/* Look up section image from data file */}}
 {{ range $sectionName, $section := site.Data.sections }}
   {{ range $section.pages }}
     {{ if hasPrefix $url . }}
-      {{ $sectionImage = $section.image }}
-      {{ $sectionAlt = $section.alt }}
+      {{ $.Scratch.Set "sectionImage" $section.image }}
+      {{ $.Scratch.Set "sectionAlt" $section.alt }}
     {{ end }}
   {{ end }}
 {{ end }}
+
+{{ $sectionImage := $.Scratch.Get "sectionImage" }}
+{{ $sectionAlt := $.Scratch.Get "sectionAlt" }}
 
 <article class="content-with-sidebar {{ if eq .Params.type "poem" }}poem{{ else }}prose{{ end }}">
     {{ if $sectionImage }}
