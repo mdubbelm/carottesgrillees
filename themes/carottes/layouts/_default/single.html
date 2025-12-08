@@ -4,22 +4,14 @@
 {{ $sectionAlt := "" }}
 {{ $url := .RelPermalink }}
 
-{{/* Map sections to their images and alt texts */}}
-{{ if or (hasPrefix $url "/palomino") (hasPrefix $url "/een-uitroep") (hasPrefix $url "/festina-lente") (hasPrefix $url "/lust-for-life") (hasPrefix $url "/ruim-op-tijd") (hasPrefix $url "/vier-uur") (hasPrefix $url "/een-dag-aan-zee") (hasPrefix $url "/klein") (hasPrefix $url "/kleine-schaduw") (hasPrefix $url "/voor-de-zekerheid") (hasPrefix $url "/geen-gevaar") (hasPrefix $url "/stil-je-honger") (hasPrefix $url "/van-porselein") (hasPrefix $url "/babel") (hasPrefix $url "/behandel") (hasPrefix $url "/explico") (hasPrefix $url "/anatomie") (hasPrefix $url "/zeepaardje") (hasPrefix $url "/lente") (hasPrefix $url "/droom") (hasPrefix $url "/winter") (hasPrefix $url "/nog-meert") (hasPrefix $url "/sprong") (hasPrefix $url "/zonder-titel") (hasPrefix $url "/korreltje") (hasPrefix $url "/vijf-uur") (hasPrefix $url "/uiltje") (hasPrefix $url "/bejaarden") (hasPrefix $url "/palomino6") }}
-  {{ $sectionImage = "/images/hipstamatic-483.jpeg" }}
-  {{ $sectionAlt = "Palomino - zwartwit foto van een paard" }}
-{{ else if or (hasPrefix $url "/marina") (hasPrefix $url "/vlinders") (hasPrefix $url "/engeltje") (hasPrefix $url "/ik-houd-van") (hasPrefix $url "/juichend") (hasPrefix $url "/nogmaals") (hasPrefix $url "/dwaze-maagden") (hasPrefix $url "/wie-telt") (hasPrefix $url "/eer-dat-ik") (hasPrefix $url "/voor-jou") (hasPrefix $url "/vogeltje") (hasPrefix $url "/oke") }}
-  {{ $sectionImage = "/images/marina.jpg" }}
-  {{ $sectionAlt = "Marina - portret van een vrouw" }}
-{{ else if or (hasPrefix $url "/max") (hasPrefix $url "/gekke-max") (hasPrefix $url "/het-hoedje") (hasPrefix $url "/hombre") (hasPrefix $url "/guppy") (hasPrefix $url "/kano") (hasPrefix $url "/waar-is-max") (hasPrefix $url "/hop-allen") (hasPrefix $url "/max-telt") (hasPrefix $url "/ontbijt") (hasPrefix $url "/naar-bed") (hasPrefix $url "/ontmoet-max") }}
-  {{ $sectionImage = "/images/max.jpg" }}
-  {{ $sectionAlt = "Max - portret van een jongen met hoed" }}
-{{ else if or (hasPrefix $url "/gevonden-voorwerpen") (hasPrefix $url "/verloren-tijd") (hasPrefix $url "/mondriaan") (hasPrefix $url "/la-biche") (hasPrefix $url "/zingend") (hasPrefix $url "/outro") (hasPrefix $url "/vindplaatsen") (hasPrefix $url "/compositie") (hasPrefix $url "/schaapje") }}
-  {{ $sectionImage = "/images/objets-trouves.jpg" }}
-  {{ $sectionAlt = "Gevonden voorwerpen - collage van objecten" }}
-{{ else if or (hasPrefix $url "/vallende-mannen") (hasPrefix $url "/van-a-tot-en-met") (hasPrefix $url "/van-n-tot-en-met") (hasPrefix $url "/isaak-babel") (hasPrefix $url "/leonora-carrington") (hasPrefix $url "/daniil-charms") (hasPrefix $url "/velimir-chlebnikov") (hasPrefix $url "/ee-cummings") (hasPrefix $url "/marcel-duchamp") (hasPrefix $url "/albert-ehrenstein") (hasPrefix $url "/federico-garcia") (hasPrefix $url "/chris-van-geel") (hasPrefix $url "/dick-hillenius") (hasPrefix $url "/jakob-van-hoddis") (hasPrefix $url "/bohumil-hrabal") (hasPrefix $url "/christian-kracht") (hasPrefix $url "/joaquim-maria") (hasPrefix $url "/vladimir-majakovski") (hasPrefix $url "/marinetti") (hasPrefix $url "/tip-marugg") (hasPrefix $url "/andrej-platonov") (hasPrefix $url "/raymond-queneau") (hasPrefix $url "/jacques-rigaut") (hasPrefix $url "/kurt-schwitters") (hasPrefix $url "/marina-tsvetajeva") (hasPrefix $url "/jacques-vache") (hasPrefix $url "/robert-walser") (hasPrefix $url "/william-carlos") (hasPrefix $url "/michail-michailovitsj") }}
-  {{ $sectionImage = "/images/vallende-mannen.jpg" }}
-  {{ $sectionAlt = "Vallende mannen - surrealistische illustratie" }}
+{{/* Look up section image from data file */}}
+{{ range $sectionName, $section := site.Data.sections }}
+  {{ range $section.pages }}
+    {{ if hasPrefix $url . }}
+      {{ $sectionImage = $section.image }}
+      {{ $sectionAlt = $section.alt }}
+    {{ end }}
+  {{ end }}
 {{ end }}
 
 <article class="content-with-sidebar {{ if eq .Params.type "poem" }}poem{{ else }}prose{{ end }}">
