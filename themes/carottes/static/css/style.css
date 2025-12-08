@@ -10,7 +10,7 @@
     --color-border: #cccccc;
 
     --font-body: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    --font-serif: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --font-serif: 'Iowan Old Style', 'Palatino Linotype', 'Palatino', Georgia, serif;
 
     --sidebar-width: 200px;
     --max-width: 1000px;
@@ -131,7 +131,7 @@ body {
     padding: 0.5rem 0.65rem;
     color: var(--color-text);
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     white-space: nowrap;
     transition: background-color 0.15s ease;
 }
@@ -475,6 +475,7 @@ button:focus {
     order: 1;
     margin: 0;
     padding: 0;
+    max-width: 65ch;
 }
 
 /* When no section image, content takes full width */
