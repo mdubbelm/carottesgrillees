@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Simple flat carrot icon -->
+  <!-- Carrot body - orange -->
+  <path fill="#FF6B35" d="M256 480L128 224c0-70.7 57.3-128 128-128s128 57.3 128 128L256 480z"/>
+  <!-- Carrot stripes -->
+  <path fill="#E85A24" d="M176 256h160M160 304h192M176 352h160" stroke="#E85A24" stroke-width="16" stroke-linecap="round"/>
+  <!-- Carrot greens -->
+  <path fill="#4CAF50" d="M256 96c-16 0-32-24-32-48s16-48 32-48 32 24 32 48-16 48-32 48z"/>
+  <path fill="#4CAF50" d="M224 112c-20-12-48-8-60 16s-4 52 16 64c12-24 28-56 44-80z"/>
+  <path fill="#4CAF50" d="M288 112c20-12 48-8 60 16s4 52-16 64c-12-24-28-56-44-80z"/>
+</svg>
