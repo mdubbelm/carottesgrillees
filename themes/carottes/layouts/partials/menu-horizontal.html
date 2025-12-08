@@ -1,0 +1,68 @@
+{{/* Horizontal menu partial with dropdown submenus */}}
+{{ $currentPage := .currentPage }}
+{{ $menuItems := .menuItems }}
+{{ $currentURL := $currentPage.RelPermalink }}
+
+{{ range $menuItems }}
+  {{/* Only process top-level items (no parent) */}}
+  {{ if not .Parent }}
+    {{ $menuURL := .URL }}
+    {{ $isActive := or (eq $currentURL $menuURL) (hasPrefix $currentURL $menuURL) }}
+    {{ $hasChildren := .HasChildren }}
+
+    {{/* Check if any child is active */}}
+    {{ $childActive := false }}
+    {{ if $hasChildren }}
+      {{ range .Children }}
+        {{ $childURL := .URL }}
+        {{ if or (eq $currentURL $childURL) (hasPrefix $currentURL $childURL) }}
+          {{ $childActive = true }}
+        {{ end }}
+        {{ if .HasChildren }}
+          {{ range .Children }}
+            {{ if or (eq $currentURL .URL) (hasPrefix $currentURL .URL) }}
+              {{ $childActive = true }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    <li class="nav-item {{ if or $isActive $childActive }}active{{ end }}{{ if $hasChildren }} has-dropdown{{ end }}" role="none">
+      {{ if $hasChildren }}
+        <a href="{{ .URL }}" role="menuitem" aria-haspopup="true" aria-expanded="false">
+          {{ .Name }}
+          <svg class="dropdown-icon" aria-hidden="true" width="10" height="6" viewBox="0 0 10 6"><path fill="currentColor" d="M1 1l4 4 4-4"/></svg>
+        </a>
+        <ul class="dropdown-menu" role="menu" aria-label="{{ .Name }} submenu">
+          {{ range .Children }}
+            {{ $childURL := .URL }}
+            {{ $isChildActive := or (eq $currentURL $childURL) (hasPrefix $currentURL $childURL) }}
+            {{ $childHasChildren := .HasChildren }}
+
+            <li class="dropdown-item {{ if $isChildActive }}active{{ end }}{{ if $childHasChildren }} has-nested{{ end }}" role="none">
+              {{ if $childHasChildren }}
+                <a href="{{ .URL }}" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                  {{ .Name }}
+                  <svg class="dropdown-icon nested" aria-hidden="true" width="6" height="10" viewBox="0 0 6 10"><path fill="currentColor" d="M1 1l4 4-4 4"/></svg>
+                </a>
+                <ul class="nested-menu" role="menu" aria-label="{{ .Name }} submenu">
+                  {{ range .Children }}
+                    {{ $grandchildActive := or (eq $currentURL .URL) (hasPrefix $currentURL .URL) }}
+                    <li class="nested-item {{ if $grandchildActive }}active{{ end }}" role="none">
+                      <a href="{{ .URL }}" role="menuitem">{{ .Name }}</a>
+                    </li>
+                  {{ end }}
+                </ul>
+              {{ else }}
+                <a href="{{ .URL }}" role="menuitem">{{ .Name }}</a>
+              {{ end }}
+            </li>
+          {{ end }}
+        </ul>
+      {{ else }}
+        <a href="{{ .URL }}" role="menuitem">{{ .Name }}</a>
+      {{ end }}
+    </li>
+  {{ end }}
+{{ end }}
