@@ -418,6 +418,32 @@ theme = 'carottes'
   name = 'stoelgang'
   url = '/stoelgang/'
   weight = 7
+  identifier = 'stoelgang'
+
+[[menus.main]]
+  name = 'sachalekken'
+  url = '/sacha/'
+  weight = 1
+  parent = 'stoelgang'
+  identifier = 'sachalekken'
+
+[[menus.main]]
+  name = 'sacha schrijft'
+  url = '/sacha/'
+  weight = 1
+  parent = 'sachalekken'
+
+[[menus.main]]
+  name = 'sacha met pasen'
+  url = '/sacha-met-pasen/'
+  weight = 2
+  parent = 'sachalekken'
+
+[[menus.main]]
+  name = 'de eerste bladzijde'
+  url = '/de-eerste-bladzijde/'
+  weight = 3
+  parent = 'sachalekken'
 
 # Vallende mannen - met 3 niveaus
 [[menus.main]]
