@@ -13,7 +13,7 @@ Probeer het te begrijpen –"* (uit: Beneden)
 
 [![](/images/carrington.jpg)](/images/carrington.jpg)
 
-Van oorsprong Britse surrealistische schilderes en schrijfster (1917-2011). Ontmoette [Max Ernst](index.php/max-houdt-van-hoofddeksels/zonder-titel) in 1936 in Londen en vertrok met hem naar Frankrijk. Na de Duitse inval werd Ernst gearresteerd en vluchtte Carrington naar Spanje waar ze instortte. Haar familie liet haar opnemen (lees En Bas, vertaald als Beneden, in: De ovale dame). Na haar ontslag uit de kliniek reisde ze onder begeleiding naar Lissabon en vluchtte daar de Mexicaanse Ambassade in. Zo belandde ze in Mexico waar ze woonde tot haar dood.
+Van oorsprong Britse surrealistische schilderes en schrijfster (1917-2011). Ontmoette [Max Ernst](/zonder-titel/) in 1936 in Londen en vertrok met hem naar Frankrijk. Na de Duitse inval werd Ernst gearresteerd en vluchtte Carrington naar Spanje waar ze instortte. Haar familie liet haar opnemen (lees En Bas, vertaald als Beneden, in: De ovale dame). Na haar ontslag uit de kliniek reisde ze onder begeleiding naar Lissabon en vluchtte daar de Mexicaanse Ambassade in. Zo belandde ze in Mexico waar ze woonde tot haar dood.
 
 **Waarom?**
 Zoeken we niet allemaal de weg uit het doolhof?

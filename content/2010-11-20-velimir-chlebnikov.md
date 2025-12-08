@@ -11,7 +11,7 @@ type: "prose"
 
 [![](/images/chlebnikov.jpg)](/images/chlebnikov.jpg)
 
-Chlebnikov (1885-1922) was een Russisch dichter met een voorliefde voor neologismen en klankdichten. Hij was een voorbeeld voor dichters als [Majakovski](index.php/vallende-mannen/van-a-tot-en-met-m/majakovski). Het verhaal gaat dat hij door het land trok met als enige bagage een kussensloop met daarin zijn manuscripten. In 1922 stierf hij aan ondervoeding en uitputting.
+Chlebnikov (1885-1922) was een Russisch dichter met een voorliefde voor neologismen en klankdichten. Hij was een voorbeeld voor dichters als [Majakovski](/vladimir-majakovski/). Het verhaal gaat dat hij door het land trok met als enige bagage een kussensloop met daarin zijn manuscripten. In 1922 stierf hij aan ondervoeding en uitputting.
 
 **Waarom?**
 Als ik zijn naam hoor denk ik steeds even aan brood.

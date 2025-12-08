@@ -20,7 +20,7 @@ Waarom!
 Nu descendant un escalier, 1912.
 Roue de bicyclette, 1913.
 Le Grand Verre, 1915-1923.
-[Fontaine](index.php/objets-trouves), urinoir renversé et signé « R. Mutt », 1917.
+[Fontaine](/gevonden-voorwerpen/), urinoir renversé et signé « R. Mutt », 1917.
 L.H.O.O.Q., reproduction de La Joconde affublée d'une paire de moustache, 1919.
 Why not sneeze Rrose Selavy ?, boîte surréaliste : morceaux de marbre blanc taillés comme des cubes de sucre contenus dans une cage à oiseaux d'où sortent un os de seiche et un thermomètre, 1921.
 Anemic cinema, court métrage réalisé avec la collaboration de Man Ray et Marc Allégret, 1926.

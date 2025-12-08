@@ -7,6 +7,6 @@ original_id: 174
 type: "prose"
 ---
 
-hé, deze liedjes zijn verplaatst naar **[short cuts](index.php/short-cuts)**.
+hé, deze liedjes zijn verplaatst naar **[short cuts](/whos-afraid-of-red-yellow-and-blue-iii/)**.
 
 ![](/images/wortelbeet.jpg)

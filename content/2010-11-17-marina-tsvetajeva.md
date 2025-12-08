@@ -14,7 +14,7 @@ Tot de knie, als bij een tsarenrat.
 
 [![](/images/tsvetajeva.jpg)](/images/tsvetajeva.jpg)
 
-[Marína](index.php/marina) Ivánovna Tsvetájeva (1892 - 1941) was een Russisch schrijfster en maar vooral dichteres. Ze vluchtte in 1922 naar het buitenland en vestigde zich in 1925 in Parijs. Heimwee en eenzaamheid brachten haar ertoe om in 1939 terug te keren naar de Sovjet-Unie. Marina maakte in 1941 een einde aan haar leven.
+[Marína](/marina/) Ivánovna Tsvetájeva (1892 - 1941) was een Russisch schrijfster en maar vooral dichteres. Ze vluchtte in 1922 naar het buitenland en vestigde zich in 1925 in Parijs. Heimwee en eenzaamheid brachten haar ertoe om in 1939 terug te keren naar de Sovjet-Unie. Marina maakte in 1941 een einde aan haar leven.
 
 **Waarom?**
 Marina schreef een van de mooiste boeken die ik heb gelezen (*Herinneringen en portretten*).
