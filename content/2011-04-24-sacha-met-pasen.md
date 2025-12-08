@@ -45,6 +45,6 @@ Het regende vandaag
 
 ![](/images/uit%20de%20wortelfabriek%20012.jpg)
 
-Meer Sacha op [fakebook](http://en-gb.facebook.com/people/Sacha-Geevers/100001969975157)...
+Meer Sacha...
 
 [![](/images/sperwerei-238x300.jpg)](/images/sperwerei.jpg)
