@@ -19,3 +19,8 @@ node_modules/
 
 # Session files
 .session-status.json
+
+# Claude Code (lokaal houden)
+CLAUDE.md
+LEARNINGS.md
+.claude/
